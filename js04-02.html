@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,8 @@
     <script>
         // 함수
         // 함수란 특정한 목적을 가지고 실행되는 소스코드들끼리 묶어놓은 코드 블럭
+        // 매개변수 : 함수를 실행하기 위해 필요한 기준값, 함수 내에서 소스코드들이 실행되기 위한 필요 데이터
+        // 반환값 : 해당 함수들 실행 시 모든 연산이 끝난 결과값을 다시 함수를 호출한 시점으로 돌려주는 데이터
 
 
         // 함수의 선언
@@ -21,9 +24,29 @@
 
         // 함수의 형태 4가지
         // 1. 매개변수와 변환값이 없는 함수
-        // 2. 존재하고, 없음 
+            // 가장 기본적인 함수의 형태이며, 함수의 내부에서 변수가 선언되고 사용, 연산결과도 내부에서 출력
+        // function 함수명() {
+        //     실행코드
+        // }
+        // 2. 존재하고, 없음
+            // 함수 실행 시 해당 함수의 외부에서 데이터를 입력 받아 내부에서 연산 시 사용하고 결과를 외부로 출력
+        // function 함수명(매개변수) {
+        //     실행코드
+        // }
         // 3. 없고 존재함
+            // 함수 실행 시 필요한 데이터를 내부에서 선언하여 연산을 진행하고, 연산된 결과를 해당 함수를 호출한 시점으로 다시 되돌려줌
+        // function 함수명() {
+        //     실행코드
+        //     return 반환값
+        // }
         // 4. 둘다 존재함
+            // 함수 실행 시 필요한 데이터를 외부에서 입력 받아 내부의 연산을 진행 후 결과값을 함수를 호출한 시점으로 되돌려줌 
+        // function 함수명(매개변수) {
+        //     실행코드
+        //     return 반환값
+        // }
+
+
         
         // 여러번 반복하기 귀찮은 방식
         // var a = 10;
@@ -35,7 +58,7 @@
             var a = 10;
             var b = 20;
             console.log(a + b);
-        }    
+        }
 
         function multi() {
             var a = 10;
@@ -48,24 +71,25 @@
         multi();
     </script>
 </head>
+
 <body>
 
-    <button id = "btn_sum">더하기</button>
-    <button id = "btn_multi">곱하기</button>
+    <button id="btn_sum">더하기</button>
+    <button id="btn_multi">곱하기</button>
 
     <script>
         var btn_sum = document.getElementById("btn_sum");
         var btn_multi = document.getElementById("btn_multi");
 
-         btn_sum.addEventListener("click", function() {
-             sum();
-         });
+        btn_sum.addEventListener("click", function () {
+            sum();
+        });
 
-         btn_multi.addEventListener("click", function(){
-             multi();
-         });
-
+        btn_multi.addEventListener("click", function () {
+            multi();
+        });
     </script>
-    
+
 </body>
+
 </html>
