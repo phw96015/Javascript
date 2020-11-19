@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 03 01</title>
+
+    <script>
+        var fruits="사과";
+        var price = 0;
+        switch(fruits) {
+            case "바나나": 
+            price = 200;
+            break;
+
+            case "사과":
+            price = 300; 
+            break;
+
+            case "체리":
+            price = 400;
+            break;
+
+            // 모든 케이스를 다 입력시 생략 가능
+            default:
+            console.log("팔지 않습니다.");
+            price = 0;
+        }
+
+        console.log(price);
+
+        console.log("-------------");
+
+        fruits = "사과";
+        price = 0;
+
+        if (fruits == "바나나") {
+            price = 200;
+        }
+        else if (fruits == "사과") {
+            price = 300;
+        }
+        else if (fruits == "체리") {
+            price = 400;
+        }
+        else {
+            price = 0;
+            console.log("팔지 않습니다.");
+        }
+
+        console.log(price);
+
+
+        console.log("---------------");
+
+
+        // new Datr().getDay()는 오늘 날짜를 가져옴 요일은 0~6이란 값으로 나옴
+
+        var day = new Date().getDay();
+        var toDay = "";
+
+        switch (day) {
+            case 1:
+            toDay = "월요일";
+            break;
+
+            case 2:
+            toDay = "화요일";
+            break;
+
+            case 3:
+            toDay = "수요일";
+            break;
+
+            case 4:
+            toDay = "목요일";
+            break;
+
+            case 5:
+            toDay = "금요일";
+            break;
+
+            case 6:
+            toDay = "토요일";
+            break;
+
+            case 7:
+            toDay = "일요일";
+            break;
+        }
+
+        console.log("오늘은 " + toDay +"입니다.");
+
+        // 문제1) 위의 요일 입력하는 부분을 사용자가 날짜를 입력하면 해당하는 요일이 출력되는 프로그램 작성
+        // else if 문 작성
+        // 사용자 입력 방식 "2020-11-12"
+
+        var Day = new Date(prompt("날짜를 입력하세요.")).getDay();
+        
+
+
+        
+
+        if (Day == 0) {
+            console.log("그 날은 일요일입니다.");
+        }
+
+        else if(Day == 1) {
+            console.log("그 날은 월요일입니다.");
+        }
+        else if(Day == 2) {
+            console.log("그 날은 화요일입니다.");
+        }
+        else if(Day == 3) {
+            console.log("그 날은 수요일입니다.");
+        }
+        else if(Day == 4) {
+            console.log("그 날은 목요일입니다.");
+        }
+        else if(Day == 5) {
+            console.log("그 날은 금요일입니다.");
+        }
+        else if(Day == 6) {
+            console.log("그 날은 토요일입니다.");
+        }
+        
+        
+
+
+       
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 03 03</title>
+
+    <script>
+        // while 문
+        // for문과 함께 널리 사용되는 반복문
+        // for문과는 달리 초가화 변수가 while문 밖에 존재하고 변수 카운트 부분이  
+        // 반복 코드블럭 내에 존재
+
+        // var 초기화 변수 선언
+        // while(조건식) {
+        // 반복할 소스코드
+        // 초기화 변수 카운트 
+        // }
+
+
+        var count = 0;
+
+        while (count < 10) {
+            console.log(count);
+            count++
+        }
+
+        // 문제 4 ) 1~10까지의 합을 구하는 프로그램
+        // while문
+
+
+        console.log("-------------");
+        var i = 0;
+        var j = 0;
+
+        while (i <= 10) {
+            j = j + i;
+            console.log(j);
+            i++;
+
+        }
+
+        // var aaa;
+        // console.log(a);
+        // console.log(aaa + 10); // NaA 출력
+        // NaN 이란?
+        // Not a Number : 존재하지 않는 숫자를 이른다.
+
+        console.log("=============");
+
+        // do ~ while 문
+        // while문과 기본적으로 동일하지만 무조건 1번은 실행을 하는 반복문
+
+        // var 초기화 변수 ;
+        // do {
+        //     반복 실행할 소스 코드
+        //     초기화 변수 카운트
+        // } while (조건신);
+
+        var count = 0;
+
+        do {
+            console.log("do~while 사용 시 " + count);
+            count++;
+        } while (count < 10);
+
+        console.log("========")
+
+        var count2 = 0;
+
+        while (count2 < 10) {
+            console.log("while문 사용 시 " + count2);
+            count2++
+        }
+    
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
